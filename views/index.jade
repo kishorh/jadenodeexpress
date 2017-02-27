@@ -1,0 +1,12 @@
+
+- var appList = [{para:'Automatically set on/off timers for your heat pump',title: "Hot Water Asist",posterImage: "http://s3-us-west-2.amazonaws.com/cloudexchange-demo/55653202e4b0a70b13a4562d.jpg"}, {para:'Automatically set on/off timers for your heat pump',title: "Myo gesture Lightning",posterImage: "http://s3-us-west-2.amazonaws.com/cloudexchange-demo/556533cce4b0a70b13a45670.jpg"},{para:'Automatically set on/off timers for your heat pump',title: "Netamo Monitor", posterImage: "http://s3-us-west-2.amazonaws.com/cloudexchange-demo/55653498e4b0a70b13a4568d.jpg"},{para:'Turns on a Dehumidifier, connected to a smart switch, if the humidity from a sensor exceed a certain value',title:"Smart Humidify", posterImage:"http://s3-us-west-2.amazonaws.com/cloudexchange-demo/556536f3e4b0a70b13a456ec.jpg"},{para:'Turns on a Dehumidifier, connected to a smart switch, if the humidity from a sensor exceed a certain value',title:"Smart Humidify", posterImage:"http://s3-us-west-2.amazonaws.com/cloudexchange-demo/5565331ee4b0a70b13a45656.jpg"},{para:'Turns on a Dehumidifier, connected to a smart switch, if the humidity from a sensor exceed a certain value',title:"Smart Humidify", posterImage:"http://s3-us-west-2.amazonaws.com/cloudexchange-demo/556535c6e4b0a70b13a456b8.jpg"}];
+
+block content
+    div.mainDiv(style="display: flex;justify-content: space-around;flex-direction: row;flex-wrap: wrap;width: 1300px;margin:auto;")
+      each name in appList
+        div.widget(style="border: 1px solid;width: 300px;margin:20px")
+          img(src= name.posterImage width = "300" height="200")
+          h5=name.title
+          small=name.para
+
+
